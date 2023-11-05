@@ -19,7 +19,7 @@ const counter: ValidatedEventAPIGatewayProxyEvent<typeof schema> = async (event)
 
   const result = countWords(input, vocabulary, event.body?.countUnknown || false);
 
-  profiler.done({ message: `Input text: ${input.length} cacharacters` });
+  profiler.done({ message: `Input text: ${input.length} characters` });
 
   return formatJSONResponse({ ok: true, data: result });
 };
