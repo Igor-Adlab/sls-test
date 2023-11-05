@@ -1,0 +1,4 @@
+.App {
+    width: 960px;
+    @apply mx-auto pt-10;
+}
