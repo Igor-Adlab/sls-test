@@ -18,6 +18,7 @@ Depending on your preferred package manager, follow the instructions below to de
 ## Check this code
 
 ### Serverless offline
+Run `serverless offline start`. API Url: `localhost:3000/dev/[function_name]`.
 
 ### Run one function locally
 
