@@ -12,7 +12,7 @@ export interface ITextFormProps {
 export function TextForm({ size, className, onSubmit, isLoading }: ITextFormProps) {
   return (
     <Form disabled={isLoading} layout="vertical" onFinish={onSubmit} className={className}>
-      <Form.Item label="Text" name="text">
+      <Form.Item label="Text" name="text" rules={[{ required: true }]}>
         <Input.TextArea
           autoSize
           placeholder="Type your text here..."
